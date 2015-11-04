@@ -37,6 +37,7 @@ watson_url = "wss://stream.watsonplatform.net/speech-to-text/api/v1/recognize?wa
 file_url = "./0001.wav"#replace this with the file you want to read
 
 init_message = params.to_json
+ws = ''
  # run websocket in an EventMachine
 EM.run {
   ws = WebSocket::Client::Simple.connect watson_url
@@ -47,7 +48,6 @@ EM.run {
       data = JSON.parse(event.data)
       if data['state'] && data['state'] == 'listening'
          if file_sent == true          
-            #ws.close()
             EM::stop_event_loop
          else
             file_sent = true
@@ -75,3 +75,4 @@ EM.run {
      puts "-- error (#{e.inspect})"
    end
 }
+ws.close()
