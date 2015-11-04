@@ -67,7 +67,7 @@ EM.run {
    end
 
    ws.on :close do |e|
-     puts "-- websocket close (#{if e!=nil then e end})"
+     puts "-- websocket close #{if e!=nil then (e) end}"
      exit 1
    end
 
