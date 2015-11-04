@@ -61,13 +61,13 @@ EM.run {
    end
  
    ws.on :open do
-     puts "-- websocket open (#{ws.url})"
+     puts "-- websocket open"
      puts             init_message
      ws.send(init_message)
    end
 
    ws.on :close do |e|
-     puts "-- websocket close (#{e.inspect})"
+     puts "-- websocket close (#{if e!=nil then e end})"
      exit 1
    end
 
@@ -75,4 +75,4 @@ EM.run {
      puts "-- error (#{e.inspect})"
    end
 }
-ws.close()
+ws.close
