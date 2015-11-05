@@ -18,3 +18,11 @@ To get service credentials, follow these steps:
      2. Copy `username` and `password` from these service credentials and paste them into the example.rb file.
      
  4. Run the example.rb file
+ 
+#Dependencies
+For this client to work properly, some additional dependencies need to be installed. First, make sure to install the Ruby Package Managment Framework, called Ruby Gems, from [here] (https://rubygems.org/pages/download). Afterwards, you need to install the following dependencies:
+ 1. websocket-client-simple
+ 2. eventmachine
+ 3. activesupport
+
+For help on how to install a dependency, called a 'gem' in ruby, follow [this link] (http://guides.rubygems.org/rubygems-basics/#installing-gems).
