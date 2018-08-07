@@ -1,3 +1,6 @@
+# DEPRECATED
+## Use the `recognize_using_websocket` method in the [Speech to Text Service](https://github.com/watson-developer-cloud/ruby-sdk/blob/master/lib/ibm_watson/speech_to_text_v1.rb) of the [Ruby SDK](https://github.com/watson-developer-cloud/ruby-sdk)
+
 # Speech To Text Ruby Client
 Ruby client that interacts with the [IBM Watson Speech to Text service](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text.html) through its WebSockets interface
 #Installation
